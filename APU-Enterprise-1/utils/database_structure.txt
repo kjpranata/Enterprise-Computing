@@ -1,0 +1,31 @@
+account
+	username t
+	password t
+	id	i (PK)
+
+	sales_executive (FK)
+
+inventory
+	id	i (PK)
+	item_name t
+	brand t
+	category t
+	stock i
+	price i
+	data_stored t
+
+report
+	id i (pk)
+
+	inventory (fk)
+
+sales_executive
+	id i (pk)
+	first_name t
+	last_name t
+	ic_passportnum t
+	
+	inventory, report (FK)
+
+
+
